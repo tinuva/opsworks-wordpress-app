@@ -13,3 +13,10 @@ Wordpress - Ready to be used as application on AWS OpsWorks
 5. Wait for all instances to be in 'running' state
 6. Deploy App to all instances
 7. At this point, the Wordpress install is finished. Visit the IP address of your instance and set up your wordpress install.
+
+## What to do next
+
+1. Add more instances to the PHP layer
+2. Create a Classic ELB
+    * On a note, the health check should be on '/' instead of the default '/index.html'
+3. Edit the PHP App Server layer, then attach the ELB created in previous step
