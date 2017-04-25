@@ -9,7 +9,9 @@ Wordpress - Ready to be used as application on AWS OpsWorks
 3. Add **PHP App Server** layer, add an instance to the layer and start it
 4. Add a new App
     * Data source type is OpsWorks, unless in step 2 RDS is used
-    * Application source, Repository Type = git; Repository URL = https://github.com/tinuva/opsworks-wordpress-app.git
+    * Application source:
+        * Repository Type = git
+        * Repository URL = https://github.com/tinuva/opsworks-wordpress-app.git
 5. Wait for all instances to be in 'running' state
 6. Deploy App to all instances
 7. At this point, the Wordpress install is finished. Visit the IP address of your instance and set up your wordpress install.
