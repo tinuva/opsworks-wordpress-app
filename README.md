@@ -6,9 +6,12 @@ Wordpress - Ready to be used as application on AWS OpsWorks
 1. Launch a new OpsWorks **Chef 11 Stack** from [here](https://console.aws.amazon.com/opsworks/home?owc=true)
 2. Add **MySQL Layer**, then add one instance to the MySQL layer and start it
     * Optional, instead of a MySQL layer you can add a RDS layer
+      NB. When creating the RDS instance, also create a database to be used with OW
 3. Add **PHP App Server** layer, add an instance to the layer and start it
 4. Add a new App
+    * App Name: wordpress
     * Data source type is OpsWorks, unless in step 2 RDS is used
+      * If RDS was used in step 2, use database name created in step 2
     * Application source:
         * Repository Type = git
         * Repository URL = https://github.com/tinuva/opsworks-wordpress-app.git
